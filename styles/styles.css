@@ -1,0 +1,298 @@
+@charset "UTF-8";
+/* CSS Document Common Elements */
+
+body {
+  position: absolute;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  background: #ffffff;
+  width: 100%;
+  height: 100%;
+  /*background-color: transparent;*/
+
+  /* below improves consistancey of font rendering across browsers */
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+
+  /* below stops FireFox rendering copy too heavily */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fix to stop Mobile Safari automatically scaling text - http://bit.ly/1mumu5F */
+@media screen and (max-device-width: 480px) {
+  body {
+    -webkit-text-size-adjust: none;
+  }
+}
+
+/* Browser Support: Chrome:5+, Safari:5.1+, Firefox:3.6+, Opera:11.5+, IE:9+, Android:4.4+, iOS:5.1+ */
+@font-face {
+  font-family: "ExampleFont";
+  src: url("../fonts/ExampleFont-BoldItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.hide-disclaimer {
+  display: none;
+}
+#container {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  display: none;
+  cursor: pointer;
+}
+
+.abs {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.rel {
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+.full {
+  width: 100%;
+  height: 100%;
+}
+
+.full-w {
+  width: 100%;
+}
+
+.hidden {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.oculto {
+  visibility: hidden;
+}
+
+#exit_btn {
+  cursor: pointer;
+  z-index: 400;
+  background-color: #ffffff;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+#keyline {
+  z-index: 399;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 1px solid #666666;
+  background-color: transparent;
+}
+
+#background {
+  background: #ffffff;
+}
+
+#img_loading {
+  width: 30px;
+  height: 30px;
+}
+
+#loading_content {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 1px solid #666666;
+}
+
+/*********** COPY and LAYOUT - default is 300x250 **********/
+
+.header-layout {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 38px;
+  background: transparent;
+}
+.footer-layout {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 38px;
+  background: transparent;
+}
+
+#img_container {
+  background: #ffffff;
+}
+#copy_container {
+  width: 90%;
+  margin: 0px 5% 0px 5%;
+}
+
+.main-copy {
+  width: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 19px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.sub-copy {
+  width: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.hidden-disclaimer {
+  display: none;
+}
+
+.small-copy {
+  font-size: 14px;
+}
+
+.copy-align-top {
+  top: 21px;
+  bottom: auto;
+}
+.copy-align-bottom {
+  top: auto;
+  bottom: 56px;
+}
+.sub-copy-align {
+  bottom: 43px;
+  top: auto;
+}
+
+.cta-container {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 38px;
+  text-align: left;
+}
+
+.cta-copy {
+  width: 100%;
+  font-family: ExampleFont;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  padding: 0px 0px 0px 15px;
+}
+
+.cta-copy-off {
+  color: #00035c;
+}
+.cta-copy-over {
+  color: #cccccc;
+}
+
+#container:hover #copy_cta,
+#container:active #copy_cta {
+  color: #666666;
+}
+
+.logo-container {
+  right: 0px;
+  bottom: 5px;
+  width: 68px;
+  height: 30px;
+}
+.logo {
+  position: absolute;
+  width: auto;
+  height: 100%;
+}
+
+.drop-shadow {
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+}
+
+/*********** TESTING **********/
+
+.borderRed {
+  border: 2px solid #ff0000;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.borderBlue {
+  border: 2px solid #0000ff;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/*********** POSITIONING **********/
+
+.center-ele {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.center-ele-bottom {
+  left: 50%;
+  -webkit-transform: translate(-50%, -100%);
+  -ms-transform: translate(-50%, -100%);
+  transform: translate(-50%, -100%);
+}
+
+.vert-center-ele {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/*********** replay btn **********/
+
+.btn-replay {
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  width: 16px;
+  height: 18px;
+  display: none;
+  z-index: 401;
+  cursor: pointer;
+  transform-origin: 50% 50%;
+}
+.btn-replay:hover {
+  transform: rotate(-360deg);
+  transition: transform 0.4s;
+}
+
+.copy_cta1 {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.copy_cta1 {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.copy_cta1 {
+  font-family: Arial, Helvetica, sans-serif !important;
+}

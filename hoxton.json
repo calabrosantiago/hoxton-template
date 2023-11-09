@@ -1,0 +1,131 @@
+{
+  "name": "Demo - Final",
+  "reportingLabel": "{Frame01}{Frame02}_{Cta}_{width}x{height}",
+  "adType": "HTML5",
+  "adSize": {
+    "width": "300",
+    "height": "250"
+  },
+  "platform": "generic",
+  "backupQuality": "80",
+  "img_frame01": {
+    "type": "image",
+    "value": "images/VW.jpg",
+    "editableGroups": ["Frame01"]
+  },
+  "text_disclaimer": {
+    "type": "image",
+    "value": "images/noImage.png",
+    "editableGroups": ["Frame01"]
+  },
+  "img_frame02": {
+    "type": "image",
+    "value": "images/VW.jpg",
+    "editableGroups": ["Frame02"]
+  },
+  "align_copy_frame01a": {
+    "type": "array",
+    "value": [
+      {
+        "label": "top",
+        "value": "top",
+        "selected": true
+      },
+      {
+        "label": "bottom",
+        "value": "bottom"
+      }
+    ],
+    "editableGroups": ["Frame01"]
+  },
+  "copy_frame01a": {
+    "type": "text",
+    "value": "You´re Now In All \nThe Driver´s Seats",
+    "editableGroups": ["Frame01"]
+  },
+  "align_copy_frame02a": {
+    "type": "array",
+    "value": [
+      {
+        "label": "top",
+        "value": "top",
+        "selected": true
+      },
+      {
+        "label": "bottom",
+        "value": "bottom"
+      }
+    ],
+    "editableGroups": ["Frame02"]
+  },
+  "copy_frame02a": {
+    "type": "text",
+    "value": "Let Ford Pro Telematics keep you up to date on your fleet and your vehicles on the road.",
+    "editableGroups": ["Frame02"]
+  },
+  "copy_cta1": {
+    "type": "text",
+    "value": "Learn More",
+    "editableGroups": ["Cta"]
+  },
+  "copy_cta2": {
+    "type": "text",
+    "value": "Shop Now",
+    "editableGroups": ["Cta"]
+  },
+  "copy_cta3": {
+    "type": "text",
+    "value": "*Disclaimer",
+    "editableGroups": ["Cta"]
+  },
+  "exit_url": {
+    "type": "text",
+    "value": "http://www.google.com",
+    "editableGroups": ["Cta"]
+  },
+  "img_logo": {
+    "type": "image",
+    "value": "images/logoFord.png",
+    "editableGroups": ["Branding"]
+  },
+  "logoFrames": {
+    "type": "text",
+    "value": "true,true,true,true,true",
+    "editableGroups": ["Config"]
+  },
+  "ctaFrames": {
+    "type": "text",
+    "value": "true,true,true,true,true",
+    "editableGroups": ["Config"]
+  },
+  "frameTimes": {
+    "type": "text",
+    "value": "3,3,3,0",
+    "editableGroups": ["Config"]
+  },
+  "fadeInSpeed": {
+    "type": "text",
+    "value": "0.5",
+    "editableGroups": ["Config"]
+  },
+  "fadeOutSpeed": {
+    "type": "text",
+    "value": "0.3",
+    "editableGroups": ["Config"]
+  },
+  "loopingProps": {
+    "type": "text",
+    "value": "0,0,true",
+    "editableGroups": ["Config"]
+  },
+  "btn_replay": {
+    "type": "image",
+    "value": "images/noImage.png",
+    "editableGroups": ["Config"]
+  },
+  "css_responsive": {
+    "type": "css",
+    "value": "",
+    "editableGroups": ["Responsive"]
+  }
+}
