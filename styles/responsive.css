@@ -3,18 +3,12 @@
 /* 300x250*/
 @media screen and (width: 300px) and (height: 250px) {
   /* default master size */
+
   .full {
     width: 100%;
     height: 50%;
   }
-  #background {
-    width: 100%;
-    height: 55%;
-    background-color: #00095b;
-    top: 0;
-    z-index: 999;
-    display: flex;
-  }
+
   .abs {
     top: 50%;
     color: #00035c;
@@ -92,6 +86,14 @@
 
   #keyline {
     display: none;
+  }
+  #background {
+    width: 100%;
+    height: 55%;
+    background-color: #00095b;
+    display: block;
+    position: absolute;
+    z-index: 900;
   }
 }
 
@@ -469,7 +471,14 @@
   .oculto {
     visibility: hidden !important;
   }
-
+  #background {
+    width: 100%;
+    height: 50%;
+    background-color: #00095b;
+    display: block;
+    position: absolute;
+    z-index: 900;
+  }
   @media screen and (max-height: 450px) {
     .cta-container {
       position: absolute;
@@ -625,7 +634,14 @@
   .oculto {
     visibility: hidden !important;
   }
-
+  #background {
+    width: 100%;
+    height: 100%;
+    background-color: #00095b;
+    display: block;
+    position: absolute;
+    z-index: 900;
+  }
   @media screen and (min-width: 450px) {
     .cta-container {
       position: absolute;
@@ -667,6 +683,9 @@
 /* 970x250*/
 
 @media screen and (width: 728px) and (height: 90px) {
+  body {
+    background-color: #00095b;
+  }
   .header-layout {
     position: absolute;
     left: 0px;
@@ -686,8 +705,7 @@
   }
 
   #img_container {
-    left: 30%;
-    width: 40%;
+    display: none;
   }
 
   #copy_container {
@@ -760,6 +778,14 @@
 
   .oculto {
     visibility: visible !important;
+  }
+  #background {
+    width: 100%;
+    height: 100%;
+    background-color: #00095b;
+    display: block;
+    position: absolute;
+    z-index: 900;
   }
 }
 
